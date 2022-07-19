@@ -1,17 +1,13 @@
 import React from 'react';
 
-import {StyleSheet, Text, View} from 'react-native';
-
-import * as Application from 'expo-application';
-import Constants from 'expo-constants';
+import { StyleSheet, Text, View } from 'react-native';
 
 interface HomeScreenProps {}
 
 const HomeScreen: React.FC<HomeScreenProps> = () => {
   return (
     <View style={styles.container}>
-      <Text>Using expo sdk {Constants.manifest?.sdkVersion}</Text>
-      <Text>App version {Application.nativeApplicationVersion}</Text>
+      <Text style={styles.text}>Awesome</Text>
     </View>
   );
 };
@@ -23,6 +19,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  text: {color: 'black'},
 });
 
 export {HomeScreen};
