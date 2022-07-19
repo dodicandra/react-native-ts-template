@@ -1,0 +1,18 @@
+{
+  "name": "react-native-ts-template",
+  "version": "0.0.1",
+  "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "author": "dodi candra <dodicandra20@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dodicandra/react-native-ts-expo-template.git"
+  },
+  "license": "MIT"
+}
