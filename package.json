@@ -1,5 +1,5 @@
 {
-  "name": "react-native-ts-template",
+  "name": "@dodicandra/react-native-ts-template",
   "version": "0.0.1",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
@@ -9,7 +9,7 @@
     "template",
     "template.config.js"
   ],
-  "author": "dodi candra <dodicandra20@gmail.com>",
+  "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dodicandra/react-native-ts-expo-template.git"

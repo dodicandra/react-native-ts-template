@@ -1,5 +1,5 @@
 install
 
 ```bash
-  npx react-native init AppName --template https://github.com/dodicandra/react-native-ts-template.git
+  npx react-native init AppName --template @dodicandra/react-native-ts-template
 ```
