@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
     "paths": {
+      "@models/*": ["./src/model/*"],
+      "@config": ["./config/env"],
+      "@redux-store/*": ["./src/redux/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@i18n": ["./src/i18n"],
+      "@react-query/*": ["./src/react-query/*"],
+      "@components-atoms/*": ["./src/components/atoms/*"],
+      "@components-molecules/*": ["./src/components/molecules/*"],
+      "@components-organisms/*": ["./src/components/organisms/*"],
       "@components/*": ["./src/components/*"],
       "@screens/*": ["./src/screens/*"],
       "@app/*": ["./src/*"]

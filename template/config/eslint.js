@@ -32,6 +32,7 @@ module.exports = {
     },
   ],
   rules: {
+    '@typescript-eslint/no-var-requires': 'off',
     // react
     'react/destructuring-assignment': 0,
     'react/require-render-return': 2,
@@ -46,6 +47,7 @@ module.exports = {
     'react-native/no-color-literals': 0,
     'react-native/no-unused-styles': 1,
     // regular
+    'no-useless-catch': 'off',
     'no-multiple-empty-lines': 2,
     'no-extra-boolean-cast': 0,
     'object-shorthand': [

@@ -16,13 +16,10 @@ pre-commit:
   commands:
     eslint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn eslint {staged_files}
+      run: yarn eslint {staged_files} && git add {staged_files}
     prettier:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn prettier {staged_files} --write --config .prettierrc.json
+      run: yarn prettier {staged_files} --write --config .prettierrc.json && git add {staged_files}
     sorter-src-file:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn format-imports --config "./import-sorter.json" {staged_files}
-    git-add:
-      glob: "*.{js,ts,jsx,tsx}"
-      run: git add {staged_files}
+      run: yarn format-imports --config "./import-sorter.json" {staged_files} && git add {staged_files}

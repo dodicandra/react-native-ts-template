@@ -1,0 +1,10 @@
+[
+  {
+    "NAME": "staging",
+    "API_HOST": "https://swapi.dev/api/"
+  },
+  {
+    "NAME": "production",
+    "API_HOST": "https://swapi.dev/api/"
+  }
+]

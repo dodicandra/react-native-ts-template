@@ -1,9 +1,15 @@
+import '@i18n';
+
 import React from 'react';
 
-import { SafeAreaView, StyleSheet } from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
-import { ErrorBoundary } from '@components/atoms/error-boundary';
-import { HomeScreen } from '@screens/home';
+import {AppProvider} from '@components-organisms/provider';
+import {ErrorBoundary} from '@components/atoms/error-boundary';
+import {initPersistor} from '@react-query/query-client';
+import {HomeScreen} from '@screens/home';
+
+initPersistor();
 
 const App = () => {
   return (
@@ -20,7 +26,9 @@ const styles = StyleSheet.create({
 function RootApp() {
   return (
     <ErrorBoundary>
-      <App />
+      <AppProvider>
+        <App />
+      </AppProvider>
     </ErrorBoundary>
   );
 }
