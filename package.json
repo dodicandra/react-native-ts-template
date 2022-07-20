@@ -11,6 +11,7 @@
     "!template/android/.gradle/**",
     "!template/android/app/build/**",
     "!template/ios/Pods/**",
+    "!template/src/.DS_Store",
     "template.config.js"
   ],
   "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
