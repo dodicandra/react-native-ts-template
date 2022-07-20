@@ -1,14 +1,17 @@
 {
   "name": "@dodicandra/react-native-ts-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
     "test": "exit 0"
   },
   "files": [
     "template",
-    "template.config.js",
-    "!template/node_modules/**"
+    "!template/node_modules/**",
+    "!template/android/.gradle/**",
+    "!template/android/app/build/**",
+    "!template/ios/Pods/**",
+    "template.config.js"
   ],
   "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
   "repository": {
