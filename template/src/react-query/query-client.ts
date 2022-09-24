@@ -1,7 +1,6 @@
 import {queryStorage} from '@lib/storage/query-storage';
 import {createAsyncStoragePersister} from '@tanstack/query-async-storage-persister';
 import {QueryClient} from '@tanstack/react-query';
-import {persistQueryClient} from '@tanstack/react-query-persist-client';
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -17,20 +16,7 @@ if (__DEV__) {
 
 export const RQStorageKey = 'RQ_Cache_storage';
 
-const persistor = createAsyncStoragePersister({
+export const persister = createAsyncStoragePersister({
   storage: queryStorage,
   key: RQStorageKey,
 });
-
-/**
- * disable this line with if(__DEV__) return;
- * to desable `persistQueryClient` cache
- */
-export const initPersistor = () => {
-  if (__DEV__) return;
-  persistQueryClient({
-    queryClient,
-    persister: persistor,
-    buster: 'RQ-1',
-  });
-};

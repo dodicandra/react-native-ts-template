@@ -34,3 +34,6 @@ build/
 local.properties
 *.iml
 *.hprof
+
+lefthook.yml
+!src/lefthook.yml

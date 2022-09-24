@@ -6,10 +6,7 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 
 import {AppProvider} from '@components-organisms/provider';
 import {ErrorBoundary} from '@components/atoms/error-boundary';
-import {initPersistor} from '@react-query/query-client';
 import {HomeScreen} from '@screens/home';
-
-initPersistor();
 
 const App = () => {
   return (
@@ -18,10 +15,6 @@ const App = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {flex: 1, backgroundColor: 'white'},
-});
 
 function RootApp() {
   return (
@@ -32,5 +25,9 @@ function RootApp() {
     </ErrorBoundary>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {flex: 1, backgroundColor: 'white'},
+});
 
 export default RootApp;
