@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/react-native-ts-template",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
     "test": "exit 0"
@@ -13,7 +13,8 @@
     "!template/android/app/build/**",
     "!template/ios/Pods/**",
     "!template/src/.DS_Store",
-    "template.config.js"
+    "template.config.js",
+    "!./lefthook.yml"
   ],
   "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
   "repository": {
