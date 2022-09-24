@@ -6,12 +6,12 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 
 import {AppProvider} from '@components-organisms/provider';
 import {ErrorBoundary} from '@components/atoms/error-boundary';
-import {HomeScreen} from '@screens/home';
+import {MainNavigator} from '@router/main-navigation';
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <HomeScreen />
+      <MainNavigator />
     </SafeAreaView>
   );
 };

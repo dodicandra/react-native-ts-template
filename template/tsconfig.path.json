@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
+      "@router/*": ["./src/router/*"],
       "@models/*": ["./src/model/*"],
       "@config": ["./config/env"],
       "@redux-store/*": ["./src/redux/*"],
