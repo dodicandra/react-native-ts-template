@@ -20,5 +20,5 @@ See the below table to find out which version of the template to use.
 
 | React Native | Template | Packages                                             |
 | ------------ | -------- | ---------------------------------------------------- |
-| 0.70         | 0.2.\*   | react query, MMKV, redux, i18n, ky, react navigation |
+| 0.67         | 0.2.\*   | react query, MMKV, redux, i18n, ky, react navigation |
 | 0.67         | 0.1.\*   | react query, MMKV, redux, i18n, ky                   |
