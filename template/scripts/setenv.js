@@ -8,17 +8,28 @@ fs.readFile(path.resolve(__dirname, '../config/envkey.json'), 'utf8', function (
   if (err) {
     throw err;
   }
+  /**
+   * @type {import('../config/envkey.json')}
+   */
   const configs = JSON.parse(data);
   const {name} = args;
   configs.forEach(config => {
     if (config.NAME === name) {
       if (fs.existsSync(envPath)) {
         const fd = fs.openSync(envPath, 'w');
-        Object.keys(config).forEach(key => fs.writeSync(fd, `export const ${key} = '${config[key]}';\n`));
+        Object.keys(config).forEach(key => {
+          const isPick = key.includes('NAME') ? key : undefined;
+          const union = isPick ? configs.map(item => `'${item[key]}'`).join(' | ') : '';
+          fs.writeSync(fd, `export const ${key} = '${config[key]}' as ${isPick ? union : typeof config[key]};\n`);
+        });
         fs.closeSync(fd);
       } else {
         const fd = fs.openSync(envPath, 'w');
-        Object.keys(config).forEach(key => fs.writeFileSync(fd, `export const ${key} = '${config[key]}';\n`));
+        Object.keys(config).forEach(key => {
+          const isPick = key.includes('NAME') ? key : undefined;
+          const union = isPick ? configs.map(item => `'${item[key]}'`).join(' | ') : '';
+          fs.writeFileSync(fd, `export const ${key} = '${config[key]}' as ${isPick ? union : typeof config[key]};\n`);
+        });
         fs.closeSync(fd);
       }
       console.log(`Config Set to ${config.NAME}`);
