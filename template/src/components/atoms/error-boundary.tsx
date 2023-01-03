@@ -49,11 +49,7 @@ class ErrorBoundary extends React.PureComponent<Props, State> {
 
   render() {
     const state = this.state;
-    return this.state.hasError ? (
-      <FallBack error={state.hasError} onPress={this.resetError} />
-    ) : (
-      this.props.children
-    );
+    return this.state.hasError ? <FallBack error={state.hasError} onPress={this.resetError} /> : this.props.children;
   }
 }
 

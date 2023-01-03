@@ -3,7 +3,7 @@ import React from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
 
 import {useAppDispatch, useAppSelector} from '@app/hooks/redux';
-import {countAction} from '@redux-store/slice/count';
+import {countAction} from '@lib/redux/slice/count';
 
 interface CountProps {}
 
