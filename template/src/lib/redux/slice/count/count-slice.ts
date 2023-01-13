@@ -1,5 +1,5 @@
+import {storeKey} from '@lib/redux/store-key';
 import {persistReducer} from '@lib/storage/redux-storage';
-import {storeKey} from '@redux-store/store-key';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 const initialState = {

@@ -4,7 +4,7 @@ import {NavigationContainer, Theme} from '@react-navigation/native';
 
 import {BottomTabScreen} from './bottom-navigation';
 import {linking} from './linking';
-import {navigationRef} from './navigation-config';
+import {navigationRef} from './navigation-helper';
 
 const theme: Theme = {
   dark: false,
