@@ -5,7 +5,8 @@ name: Publish to NPM
 
 on:
   push:
-    branches: main
+    branches:
+      - main
 
 jobs:
   publish:
@@ -20,3 +21,5 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          access: public
+          check-version: true
