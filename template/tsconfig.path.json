@@ -1,9 +1,12 @@
 {
+  "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
     "paths": {
       "@router/*": ["./src/router/*"],
       "@models/*": ["./src/model/*"],
       "@config": ["./config/env"],
+      "@react-query/*": ["./src/lib/react-query/*"],
+      "@redux-store/*": ["./src/lib/redux/*"],
       "@lib/*": ["./src/lib/*"],
       "@i18n": ["./src/i18n"],
       "@components-atoms/*": ["./src/components/atoms/*"],

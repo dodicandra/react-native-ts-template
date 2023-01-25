@@ -10,7 +10,9 @@ type FallBackProps = {
 const FallBack = (props: FallBackProps) => {
   return (
     <View style={styles.fallbackContainer}>
-      <Text style={styles.title}>Oops!</Text>
+      <Text style={styles.title} testID="display-error">
+        Oops!
+      </Text>
       <Text style={styles.subtitle}>Terjadi Kesalahan</Text>
       <Text style={styles.error}>{props.error?.toString()}</Text>
       <Button title="Coba Lagi" onPress={props.onPress} />
@@ -22,6 +24,8 @@ type State = {hasError: Error | null};
 
 type Props = {
   onError?(error: Error, stack: string): void;
+  children?: React.ReactElement;
+  FallbackComponent?: React.ComponentType<FallBackProps>;
 };
 
 class ErrorBoundary extends React.PureComponent<Props, State> {
@@ -49,7 +53,12 @@ class ErrorBoundary extends React.PureComponent<Props, State> {
 
   render() {
     const state = this.state;
-    return this.state.hasError ? <FallBack error={state.hasError} onPress={this.resetError} /> : this.props.children;
+    const FallbackComponents = this.props.FallbackComponent || FallBack;
+    return this.state.hasError ? (
+      <FallbackComponents error={state.hasError} onPress={this.resetError} />
+    ) : (
+      this.props.children
+    );
   }
 }
 

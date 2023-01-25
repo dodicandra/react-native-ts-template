@@ -37,3 +37,4 @@ local.properties
 
 lefthook.yml
 !src/lefthook.yml
+template/yarn.lock

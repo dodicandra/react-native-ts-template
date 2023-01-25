@@ -29,10 +29,5 @@
     "alwaysStrict": true,
     "lib": ["ES6", "ESNext.Promise", "ESNext", "DOM", "DOM.Iterable"]
   },
-  "exclude": [
-    "node_modules",
-    "babel.config.js",
-    "metro.config.js",
-    "jest.config.js"
-  ]
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.ts"]
 }
