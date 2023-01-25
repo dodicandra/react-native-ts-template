@@ -1,5 +1,5 @@
 import {queryStorage} from '@lib/storage/query-storage';
-import {createAsyncStoragePersister} from '@tanstack/query-async-storage-persister';
+import {createSyncStoragePersister} from '@tanstack/query-sync-storage-persister';
 import {QueryClient} from '@tanstack/react-query';
 
 export const queryClient = new QueryClient({
@@ -16,7 +16,7 @@ if (__DEV__) {
 
 export const RQStorageKey = 'RQ_Cache_storage';
 
-export const persister = createAsyncStoragePersister({
+export const persister = createSyncStoragePersister({
   storage: queryStorage,
   key: RQStorageKey,
 });
