@@ -11,7 +11,7 @@
 #### e.g. `react-native@0.67.x`
 
 ```sh
-npx react-native init AppName --template @dodicandra/react-native-ts-template@0.2.0
+npx react-native init AppName --template @dodicandra/react-native-ts-template@0.2.*
 ```
 
 See the below table to find out which version of the template to use.
@@ -20,6 +20,7 @@ See the below table to find out which version of the template to use.
 
 | React Native | Template | Packages                                             |
 | ------------ | -------- | ---------------------------------------------------- |
+| 0.71         | 0.4.\*   | react query, MMKV, redux, i18n, ky                   |
 | 0.70         | 0.3.\*   | react query, MMKV, redux, i18n, ky                   |
 | 0.67         | 0.2.\*   | react query, MMKV, redux, i18n, ky, react navigation |
 | 0.67         | 0.1.\*   | react query, MMKV, redux, i18n, ky                   |

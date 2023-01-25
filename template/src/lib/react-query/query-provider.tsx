@@ -5,7 +5,7 @@ import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
 
 import {persister, queryClient} from './query-client';
 
-const QueryProvider: React.FC = ({children}) =>
+const QueryProvider: React.FC<{children?: React.ReactElement}> = ({children}) =>
   __DEV__ ? (
     <QueryClientProvider client={queryClient} contextSharing>
       {children}

@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/react-native-ts-template",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
     "test": "exit 0"
