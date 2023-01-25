@@ -22,6 +22,7 @@ type State = {hasError: Error | null};
 
 type Props = {
   onError?(error: Error, stack: string): void;
+  children?: React.ReactElement;
 };
 
 class ErrorBoundary extends React.PureComponent<Props, State> {
@@ -49,11 +50,7 @@ class ErrorBoundary extends React.PureComponent<Props, State> {
 
   render() {
     const state = this.state;
-    return this.state.hasError ? (
-      <FallBack error={state.hasError} onPress={this.resetError} />
-    ) : (
-      this.props.children
-    );
+    return this.state.hasError ? <FallBack error={state.hasError} onPress={this.resetError} /> : this.props.children;
   }
 }
 
