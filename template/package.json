@@ -13,6 +13,9 @@
     "postinstall": "./scripts/post-install.sh"
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "6.4.0",
+    "@react-navigation/native": "6.0.13",
+    "@react-navigation/native-stack": "6.9.0",
     "@reduxjs/toolkit": "1.8.3",
     "@tanstack/query-sync-storage-persister": "4.0.5",
     "@tanstack/react-query": "4.0.5",

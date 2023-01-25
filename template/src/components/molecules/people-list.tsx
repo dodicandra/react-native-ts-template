@@ -2,8 +2,8 @@ import React from 'react';
 
 import {FlatList, ListRenderItem, StyleSheet, Text, View} from 'react-native';
 
+import {Query} from '@lib/react-query/query-hooks';
 import {IStarWars} from '@models/API';
-import {Query} from '@react-query/query-hooks';
 
 interface PeopleListProps {}
 

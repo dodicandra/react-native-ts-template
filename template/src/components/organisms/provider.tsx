@@ -4,8 +4,8 @@ import {Provider} from 'react-redux';
 
 import {PersistGate} from 'redux-persist/integration/react';
 
-import {QueryProvider} from '@react-query/query-provider';
-import {persist, store} from '@redux-store/store';
+import {QueryProvider} from '@lib/react-query/query-provider';
+import {persist, store} from '@lib/redux/store';
 
 const AppProvider: React.FC<{children?: React.ReactElement}> = ({children}) => {
   return (
