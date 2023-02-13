@@ -1,9 +1,11 @@
 import React from 'react';
 
-import {FlatList, ListRenderItem, StyleSheet, Text, View} from 'react-native';
+import {FlatList, ListRenderItem, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 import {Query} from '@lib/react-query/query-hooks';
 import {IStarWars} from '@models/API';
+import {NavigationRoot} from '@router/navigation-helper';
+import {Route} from '@router/route-name';
 
 interface PeopleListProps {}
 
@@ -12,9 +14,11 @@ const PeopleList: React.FC<PeopleListProps> = () => {
 
   const renderItem: ListRenderItem<IStarWars.People.Item> = React.useCallback(
     ({item}) => (
-      <View key={item.url} style={styles.item}>
-        <Text style={styles.text}>{item.name}</Text>
-      </View>
+      <TouchableOpacity onPress={() => NavigationRoot.navigate(Route.DETAIL, {name: item.name})}>
+        <View key={item.url} style={styles.item}>
+          <Text style={styles.text}>{item.name}</Text>
+        </View>
+      </TouchableOpacity>
     ),
     [],
   );
