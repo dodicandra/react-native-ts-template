@@ -1,19 +1,6 @@
 {
   "extends": "./tsconfig.path.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "allowJs": true,
-    "jsx": "react-native",
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
     "checkJs": true,
     "importHelpers": true,
     "noFallthroughCasesInSwitch": true,
@@ -27,7 +14,23 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "lib": ["ES6", "ESNext.Promise", "ESNext", "DOM", "DOM.Iterable"]
+    "lib": [
+    "DOM", 
+    "DOM.Iterable",
+    "es2019",
+    "es2020.bigint",
+    "es2020.date",
+    "es2020.number",
+    "es2020.promise",
+    "es2020.string",
+    "es2020.symbol.wellknown",
+    "es2021.promise",
+    "es2021.string",
+    "es2021.weakref",
+    "es2022.array",
+    "es2022.object",
+    "es2022.string"
+  ]
   },
   "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.ts"]
 }
