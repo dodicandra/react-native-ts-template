@@ -1,6 +1,7 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "@router/*": ["./src/router/*"],
       "@models/*": ["./src/model/*"],
