@@ -39,7 +39,7 @@ module.exports = function (api) {
   const plugins = [moduleResolver];
 
   return {
-    presets: ['babel-preset-expo'],
+    presets: ['module:@react-native/babel-preset'],
     plugins,
   };
 };
