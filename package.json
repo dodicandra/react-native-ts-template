@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/react-native-ts-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Clean and minimalist React Native template for a quick start with TypeScript.",
   "scripts": {
     "test": "exit 0"
@@ -13,6 +13,11 @@
     "!template/android/app/build/**",
     "!template/ios/Pods/**",
     "!template/src/.DS_Store",
+    "!template/.env",
+    "!template/.env.development.local",
+    "!template/.expo",
+    "!template/.vscode",
+    "!template/expo-env.d.ts",
     "template.config.js",
     "!./lefthook.yml"
   ],
