@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.path.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "checkJs": true,
     "importHelpers": true,
@@ -15,22 +15,26 @@
     "noImplicitThis": true,
     "alwaysStrict": true,
     "lib": [
-    "DOM", 
-    "DOM.Iterable",
-    "es2019",
-    "es2020.bigint",
-    "es2020.date",
-    "es2020.number",
-    "es2020.promise",
-    "es2020.string",
-    "es2020.symbol.wellknown",
-    "es2021.promise",
-    "es2021.string",
-    "es2021.weakref",
-    "es2022.array",
-    "es2022.object",
-    "es2022.string"
-  ]
+      "DOM",
+      "DOM.Iterable",
+      "es2019",
+      "es2020.bigint",
+      "es2020.date",
+      "es2020.number",
+      "es2020.promise",
+      "es2020.string",
+      "es2020.symbol.wellknown",
+      "es2021.promise",
+      "es2021.string",
+      "es2021.weakref",
+      "es2022.array",
+      "es2022.object",
+      "es2022.string"
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.ts"]
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.ts"],
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }

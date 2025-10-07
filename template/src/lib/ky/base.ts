@@ -1,7 +1,5 @@
 import ky from 'ky';
 
-import {API_HOST} from '@config';
-
 import {authAfterResponseHooks, authBeforeResponseHooks} from './hooks';
 
 const kyInstance = ky.create({
@@ -11,7 +9,7 @@ const kyInstance = ky.create({
 });
 
 const base = kyInstance.extend({
-  prefixUrl: API_HOST,
+  prefixUrl: process.env.EXPO_PUBLIC_API_HOST,
   timeout: 6e4 * 4,
   hooks: {
     afterResponse: [authAfterResponseHooks],

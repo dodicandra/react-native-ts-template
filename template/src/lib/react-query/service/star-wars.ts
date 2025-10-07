@@ -1,5 +1,5 @@
-import {Swapi} from '@lib/ky';
-import {IStarWars} from '@models/API';
+import {Swapi} from '@/src/lib/ky';
+import {IStarWars} from '@/src/model/API';
 import {QueryFunction} from '@tanstack/react-query';
 
 const people: QueryFunction<IStarWars.People.Response> = () => {
