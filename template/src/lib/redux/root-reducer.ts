@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
 
+import {authReducer} from './slice/auth';
 import {countReducer} from './slice/count';
 
 const baseReducer = {
+  authReducer,
   countReducer,
 };
 

@@ -1,9 +1,7 @@
 import ky, {AfterResponseHook, BeforeErrorHook, BeforeRequestHook, BeforeRetryHook} from 'ky';
 
-import {API_HOST} from '@config';
-
 const kyInstanceHook = ky.create({
-  prefixUrl: API_HOST,
+  prefixUrl: process.env.EXPO_PUBLIC_API_HOST,
   headers: {
     'cache-control': 'no-cache',
   },

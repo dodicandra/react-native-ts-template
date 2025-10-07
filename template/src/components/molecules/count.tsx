@@ -2,8 +2,8 @@ import React from 'react';
 
 import {Button, StyleSheet, Text, View} from 'react-native';
 
-import {useAppDispatch, useAppSelector} from '@app/hooks/redux';
-import {countAction} from '@lib/redux/slice/count';
+import {useAppDispatch, useAppSelector} from '@/src/hooks/redux';
+import {countAction} from '@/src/lib/redux/slice/count';
 
 interface CountProps {}
 

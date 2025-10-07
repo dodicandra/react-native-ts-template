@@ -38,3 +38,11 @@ local.properties
 lefthook.yml
 !src/lefthook.yml
 template/yarn.lock
+template/.env
+template/.env*.local
+Awesome
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
