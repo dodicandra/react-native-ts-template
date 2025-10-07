@@ -40,7 +40,6 @@ lefthook.yml
 template/yarn.lock
 template/.env
 template/.env*.local
-Awesome
 # Expo
 .expo/
 dist/

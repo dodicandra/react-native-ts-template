@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>awesome</string>
-          <string>com.Awesom</string>
+          <string>com.Awesome</string>
         </array>
       </dict>
     </array>

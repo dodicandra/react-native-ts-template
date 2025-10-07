@@ -19,14 +19,14 @@ See the below table to find out which version of the template to use.
 
 #### React Native | Template Version | Packages
 
-| React Native | expo sdk | Template | Packages                                                          |
-| ------------ | -------- | -------- | ----------------------------------------------------------------- |
-| 0.81         | 54       | 1.0.0    | expo module, react query, MMKV, redux, i18n, ky, react navigation |
-| 0.75         |          | 0.6.0    | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.74         |          | 0.5.9    | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.72         |          | 0.5.0    | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.71         |          | 0.4.\*   | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.70         |          | 0.3.\*   | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.69         |          | 0.2.3    | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.67         |          | 0.2.2    | react query, MMKV, redux, i18n, ky, react navigation              |
-| 0.67         |          | 0.1.\*   | react query, MMKV, redux, i18n, ky                                |
+| React Native | expo sdk | Template | Packages                                                     |
+| ------------ | -------- | -------- | ------------------------------------------------------------ |
+| 0.81         | 54       | 1.0.0    | expo module, react query, MMKV, redux, i18n, ky, expo router |
+| 0.75         |          | 0.6.0    | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.74         |          | 0.5.9    | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.72         |          | 0.5.0    | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.71         |          | 0.4.\*   | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.70         |          | 0.3.\*   | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.69         |          | 0.2.3    | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.67         |          | 0.2.2    | react query, MMKV, redux, i18n, ky, react navigation         |
+| 0.67         |          | 0.1.\*   | react query, MMKV, redux, i18n, ky                           |
