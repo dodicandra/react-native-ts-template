@@ -1,6 +1,7 @@
-import {storeKey} from '@lib/redux/store-key';
-import {persistReducer} from '@lib/storage/redux-storage';
+import {persistReducer} from '@/src/lib/storage/redux-storage';
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+
+import {storeKey} from '../../store-key';
 
 const initialState = {
   count: 1,

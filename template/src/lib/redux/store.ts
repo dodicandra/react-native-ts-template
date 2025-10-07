@@ -14,11 +14,6 @@ function configure() {
         },
       });
 
-      if (__DEV__) {
-        const createDebugger = require('redux-flipper').default;
-        defaultMiddleWare.push(createDebugger());
-      }
-
       return defaultMiddleWare;
     },
   });

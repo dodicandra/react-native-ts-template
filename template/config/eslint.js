@@ -41,6 +41,7 @@ module.exports = {
     'react/sort-comp': 0,
     'react/react-in-jsx-scope': 0,
     'react-hooks/exhaustive-deps': 'warn',
+    'react/no-unstable-nested-components': 'off',
     // react-native
     'react-native/split-platform-components': 0,
     'react-native/no-inline-styles': 0,
