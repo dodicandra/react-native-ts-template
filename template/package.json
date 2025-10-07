@@ -1,5 +1,5 @@
 {
-  "name": "Awesome",
+  "name": "RNExpoTemplate",
   "main": "expo-router/entry",
   "version": "0.0.1",
   "private": true,

@@ -1,4 +1,4 @@
-package com.Awesome
+package com.RNExpoTemplate
 
 import android.app.Application
 import android.content.res.Configuration

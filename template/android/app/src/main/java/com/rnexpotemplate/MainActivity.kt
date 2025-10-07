@@ -1,4 +1,4 @@
-package com.Awesome
+package com.RNExpoTemplate
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

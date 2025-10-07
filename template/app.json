@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Awesome",
-    "slug": "Awesome",
+    "name": "RNExpoTemplate",
+    "slug": "RNExpoTemplate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/icon.png",
-    "scheme": "awesome",
+    "scheme": "com.rnexpotemplate",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.Awesome"
+      "bundleIdentifier": "com.RNExpoTemplate"
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +24,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.Awesome"
+      "package": "com.RNExpoTemplate"
     },
     "web": {
       "bundler": "metro",
