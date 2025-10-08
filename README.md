@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-  npx react-native init AppName --template @dodicandra/react-native-ts-template
+  npx @react-native-community/cli@latest init AppName --template @dodicandra/react-native-ts-template
 ```
 
 ### Usage with older versions of React Native
@@ -11,7 +11,7 @@
 #### e.g. `react-native@0.72.12`
 
 ```sh
-npx react-native init AppName --template @dodicandra/react-native-ts-template@0.5.0
+npx @react-native-community/cli@latest init AppName --template @dodicandra/react-native-ts-template@0.5.0
 ```
 
 See the below table to find out which version of the template to use.
@@ -21,7 +21,7 @@ See the below table to find out which version of the template to use.
 
 | React Native | expo sdk | Template | Packages                                                     |
 | ------------ | -------- | -------- | ------------------------------------------------------------ |
-| 0.81         | 54       | 1.0.0    | expo module, react query, MMKV, redux, i18n, ky, expo router |
+| 0.81         | 54       | 1.0.x    | expo module, react query, MMKV, redux, i18n, ky, expo router |
 | 0.75         |          | 0.6.0    | react query, MMKV, redux, i18n, ky, react navigation         |
 | 0.74         |          | 0.5.9    | react query, MMKV, redux, i18n, ky, react navigation         |
 | 0.72         |          | 0.5.0    | react query, MMKV, redux, i18n, ky, react navigation         |
